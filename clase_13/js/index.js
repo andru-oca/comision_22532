@@ -37,24 +37,80 @@ var numbers_var = 55; //permite variacion, scope functions
 const numbers_const = 10; // inmutable
 
 
-(()=> {
+// (()=> {
     
-    if (true){
-        var data = 1;
-        let scope_block = 10;
-        document.write("<h1>This is passed </h1>");
-        console.log("BY BLOCK")
-        console.log( data );
-        console.warn(scope_block);
-    }
-    console.log("IN THE FUNCTION")
-    console.log( data );
-    console.warn(scope_block);
-})()
+//     if (true){
+//         var data = 1;
+//         let scope_block = 10;
+//         document.write("<h1>This is passed </h1>");
+//         console.log("BY BLOCK")
+//         console.log( data );
+//         console.warn(scope_block);
+//     }
+//     console.log("IN THE FUNCTION")
+//     console.log( data );
+//     console.warn(scope_block);
+// })()
+
+
+// console.log( valueError);
+
+// var valueError = "Will be as undefined";
+
+// let valueError = "Will be as Referene Error";
+
+
+/*Type of  data type*/
+
+
+/*Type  objecst*/
+
+
+/*Asignacion | aritmeticos*/
 
 
 
-/*Type of */
+/*prompt | alert | document.write */
+
+
+let miNombre = prompt("Ingresa tu Nombre");
+
+
+window.alert("Hey! Hola " + miNombre);
+
+let text = `<h1> Hola tu nombre es ${miNombre}</h1>` ;
+
+document.write(text);
+
+let to_insert_data = document.querySelector('[data-v]');
+
+to_insert_data.insertAdjacentHTML('afterend',text);
+
+
+// window.alert('hello');
+
+/*
+    Permisos para usar elementos de los dispositivos
+    Material Extra de informacion de las capacidades de JS
+
+*/
+
+// let video = document.getElementById("stream");
+
+// navigator.mediaDevices.getUserMedia(
+//     {   
+//         video : true
+//     })
+// .then ( stream => 
+//     {
+        
+//         video.srcObject = stream;
+//         console.log(stream);
+//     }
+// );
+
+
+
 
 
 
